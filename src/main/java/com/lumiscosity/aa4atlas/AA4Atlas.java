@@ -17,7 +17,7 @@ public class AA4Atlas implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final Item ANTIQUE_ATLAS = new AtlasItem(new Item.Settings());
+	public static final Item ANTIQUE_ATLAS = new AtlasItem(new Item.Settings().maxCount(1));
 
 	@Override
 	public void onInitialize() {
