@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aa4-atlas",
+	"version": "${version}",
+	"name": "AA4 Atlas",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"lumiscosity, Hunternif"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "LGPLv3",
+	"icon": "assets/aa4-atlas/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lumiscosity.aa4atlas.AA4Atlas"
+		],
+		"client": [
+			"com.lumiscosity.aa4atlas.AA4AtlasClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "aa4-atlas.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

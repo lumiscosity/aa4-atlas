@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aa4-atlas:item/antique_atlas"
+  }
+}

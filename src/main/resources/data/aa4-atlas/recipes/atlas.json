@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:compass"
+    }
+  ],
+  "result": {
+    "item": "aa4-atlas:antique_atlas",
+    "count": 1
+  }
+}
