@@ -1,0 +1,51 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "LGPL-3.0-or-later"
+issueTrackerURL = "https://github.com/lumiscosity/aa4-atlas/issues"
+
+[[mods]]
+modId = "aa4_atlas"
+version = "1.0.0"
+displayName = "AA4 Atlas"
+description = "Antique Atlas 4 addon which adds the atlas item back"
+authors = "lumiscosity, Hunternif"
+displayURL = "https://modrinth.com/project/aa4-atlas"
+logoFile = "assets/aa4-atlas/icon.png"
+
+[properties]
+"connector:placeholder" = true
+
+[[dependencies.aa4_atlas]]
+modId = "connector"
+mandatory = true
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.aa4_atlas]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.aa4_atlas]]
+modId = "fabric_api"
+mandatory = true
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.aa4_atlas]]
+modId = "surveyor"
+mandatory = true
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.aa4_atlas]]
+modId = "antique_atlas"
+mandatory = true
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"

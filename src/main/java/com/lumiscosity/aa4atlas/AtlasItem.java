@@ -1,23 +1,16 @@
 package com.lumiscosity.aa4atlas;
 
-import com.google.common.collect.Multimap;
-
-import folk.sisby.surveyor.ServerSummary;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
-import java.util.Set;
-import java.util.UUID;
 
 public class AtlasItem extends Item {
     @NotNull

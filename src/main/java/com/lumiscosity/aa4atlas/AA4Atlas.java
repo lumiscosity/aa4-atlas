@@ -25,7 +25,5 @@ public class AA4Atlas implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
 			content.addAfter(Items.WRITABLE_BOOK, ANTIQUE_ATLAS);
 		});
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }
