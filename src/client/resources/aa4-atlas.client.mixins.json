@@ -3,9 +3,8 @@
   "package": "com.lumiscosity.aa4atlas.mixin.client",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "HeldItemRedirectMixin",
-    "HeldRenderEnableMixin",
-    "KeybindItemCheckMixin"
+    "HandheldItemMixin",
+    "KeybindLockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
