@@ -21,9 +21,6 @@
 		],
 		"client": [
 			"com.lumiscosity.aa4atlas.AA4AtlasClient"
-		],
-		"mixinsquared": [
-			"com.lumiscosity.aa4atlas.mixin.AtlasMixinCanceller"
 		]
 	},
 	"mixins": [
