@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import static com.lumiscosity.aa4atlas.AA4Atlas.*;
 
 @Mixin(AntiqueAtlasKeybindings.class)
-public class KeybindItemCheckMixin {
+public class KeybindLockMixin {
 	@Shadow @Final public static KeyBinding ATLAS_KEYMAPPING;
 
 	@Inject(method = "onClientTick(Lnet/minecraft/client/MinecraftClient;)V", at = @At("HEAD"), cancellable = true)
