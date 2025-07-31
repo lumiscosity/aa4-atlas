@@ -48,4 +48,4 @@ modId = "antique_atlas"
 mandatory = true
 versionRange = "[2.11.0,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
