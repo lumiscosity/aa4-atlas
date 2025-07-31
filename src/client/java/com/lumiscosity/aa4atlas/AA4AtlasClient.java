@@ -4,10 +4,6 @@ import folk.sisby.antique_atlas.gui.AtlasScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import static com.lumiscosity.aa4atlas.AA4Atlas.MOD_ID;
 
 public class AA4AtlasClient implements ClientModInitializer {
 	@Override
