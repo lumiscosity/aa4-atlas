@@ -10,12 +10,10 @@ import org.slf4j.LoggerFactory;
 import static com.lumiscosity.aa4atlas.AA4Atlas.MOD_ID;
 
 public class AA4AtlasClient implements ClientModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
 	@Override
 	public void onInitializeClient() {
 		if (!FabricLoader.getInstance().isModLoaded("antique_atlas")) {
-			LOGGER.error("Antique Atlas 4 is not installed! AA4 Atlas will not do anything.");
+			throw new RuntimeException("Antique Atlas 4 is required for AA4 Atlas to function, but it wasn't found!");
 		}
 		ClientPlayNetworking.registerGlobalReceiver(AtlasItem.GUI_PACKET_ID, (client, handler, buf, responseSender) -> {
 			client.execute(() -> {
