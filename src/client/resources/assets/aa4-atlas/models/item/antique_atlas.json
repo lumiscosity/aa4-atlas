@@ -1,3 +1,6 @@
 {
-  "parent": "antique_atlas:item/atlas"
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "aa4-atlas:item/antique_atlas"
+  }
 }

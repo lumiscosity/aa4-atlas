@@ -13,13 +13,15 @@ import net.minecraft.util.Identifier;
 public class AA4Atlas implements ModInitializer {
 	public static final String MOD_ID = "aa4-atlas";
 
+	public static final Item EMPTY_ATLAS = new EmptyAtlasItem(new Item.Settings().maxCount(1));
 	public static final Item ANTIQUE_ATLAS = new AtlasItem(new Item.Settings().maxCount(1));
 
 	@Override
 	public void onInitialize() {
+		Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "empty_atlas"), EMPTY_ATLAS);
 		Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "antique_atlas"), ANTIQUE_ATLAS);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
-			content.addAfter(Items.WRITABLE_BOOK, ANTIQUE_ATLAS);
+			content.addAfter(Items.WRITABLE_BOOK, EMPTY_ATLAS);
 		});
 	}
 }
